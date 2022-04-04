@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../resources/css/style.css">
+    <link rel="stylesheet" href="../resources/css/queries.css">
+    <link rel="shortcut icon" type="image" href="../resources/image/logo_foot.png">
+    <title>Legends Adventure | Explore the elemental world </title>
+</head>
+
+<body>
+
+    <!-- banner của trang chủ -->
+    <header>
+        <div class="header-inner">
+
+            <!-- Vùng tải game và đăng nhập khi thanh navbar responsive -->
+            <div class="login-out-nav">
+                <a href="#" class="btn"><i class="fas fa-download"></i>&ensp;Download Game</a>
+                <a href="login.html" class="btn">Log in&ensp;<i class="fas fa-user-circle"></i></a>
+            </div>
+
+            <!-- thanh navbar -->
+            <nav class="navbar fixed-top navbar-expand-lg">
+                <a class="navbar-brand" href="index.html">
+                    <img src="../resources/image/Logo.png" width="70px">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <i class="fas fa-bars navbar-toggler-icon"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="event.html">EVENT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">SKINS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="world.html">WORLD</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                EXPLORE
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">RANK</a>
+                                <a class="dropdown-item" href="#">OPEN MAP</a>
+                                <a class="dropdown-item" href="#">ABOVE GAME</a>
+                                <a class="dropdown-item" href="#">MOVEI</a>
+                                <a class="dropdown-item" href="#">STORY</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                MORE
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">COMNUNITY</a>
+                                <a class="dropdown-item" href="#">OUR STUDIOS</a>
+                                <a class="dropdown-item" href="#">FEEDBACK</a>
+                                <a class="dropdown-item" href="#">SUPORT</a>
+                                <a class="dropdown-item" href="#">GIFT CODE</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                        <ul class="login-in-nav navbar-nav">
+                            <a href="#" class="btn"><i class="fas fa-download"></i>&ensp;Download Game</a>
+                            <a href="login.html" class="btn">Log in&ensp;<i class="fas fa-user-circle"></i></a>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!-- vùng banner -->
+        <div class="banner">
+            <div class="c-video">
+                <video src="../resources/video/background.mp4" muted loop autoplay></video>
+            </div>
+            <div class="introduc">
+                <h2 id="h2">
+                    Released on Multiple Platforms - Download Now!
+                </h2>
+                <div class="down"></div>
+                <div class="down"></div>
+                <div class="down"></div>
+                <div class="down-list">
+                    <div class="down-align">
+                        <ul id="down_on" class="down-animate1">
+                            <li><a href="#"><img src="../resources/image/Google play.png"></a></li>
+                            <li><a href="#"><img src="../resources/image/App Store.png"></a></li>
+                        </ul>
+                        <ul id="down_on" class="down-animate2">
+                            <li><a href="#"><img src="../resources/image/Windown.png"></a></li>
+                            <li><a href="#"><img src="../resources/image/PS5.jpg"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- thân trang web -->
+    <div class="body">
+
+        <!-- phần body đầu tiên phần liên quan đến sự kiện mới -->
+        <div class="news">
+            <section id="sec1">
+                <!-- tiêu đề -->
+                <center>
+                    <h1><i class="fas fa-star-christmas"></i>NEWS<i class="fas fa-star-christmas"></i></h1>
+                    <hr>
+                </center>
+                <div class="row">
+
+                        <!-- cột carousel -->
+                    <div class="col-lg-6 mt-3">
+                        <div id="demo" class="carousel slide" data-ride="carousel">
+                            <ul class="carousel-indicators">
+                                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                                <li data-target="#demo" data-slide-to="1"></li>
+                                <li data-target="#demo" data-slide-to="2"></li>
+                                <li data-target="#demo" data-slide-to="3"></li>
+                                <li data-target="#demo" data-slide-to="4"></li>
+                            </ul>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../resources/image/carousel1.jpg" alt="image carousel">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../resources/image/carousel2.jpg" alt="image carousel">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../resources/image/carousel3.jpg" alt="image carousel">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../resources/image/carousel4.jpg" alt="image carousel">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../resources/image/carousel5.jpg" alt="image carousel">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- cột các mục sự kiện game -->
+                    <div class="col-lg-6 mt-3">
+                        <div class="list-group">
+                            <h3><a href="#">New</a></h3>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <p class="first_title">
+                                    Update/v3.2.0 "Rise of Darknight/Next Empire Domination" Preview Page Now
+                                    Online!
+                                </p>
+                                <p class="last_title">Jun 27, 2021</p>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <p class="first_title">"Legend of Great Sword" Appeared on Floating Island 6</p>
+                                <p class="last_title">Jun 16, 2021</p>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <p class="first_title">Event "Hunter the Spectre" Gameplay Details</p>
+                                <p class="last_title">Jun 12, 2021</p>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <p class="first_title">Event "The Last King of Lugnica" Gameplay Details</p>
+                                <p class="last_title">Jun 10, 2021</p>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <p class="first_title">Skin Forozen Robe and Some Jewelrys on Sale</p>
+                                <p class="last_title">May 30, 2021</p>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <p class="first_title">Plant Element Update 11 Skill Special Attack and Heal</p>
+                                <p class="last_title">May 26, 2021</p>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <p class="first_title">Fire Emlement are Rise Damage as Percentage of Heal</p>
+                                <p class="last_title">May 25, 2021</p>
+                            </a>
+                        </div>
+                        <a class="btn" href="#" role="button"><i class="fas fa-plus-circle"></i>&nbsp;More</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- phần đặc trưng của game -->
+        <div class="sect">
+
+            <!-- phần 1 -->
+            <section id="game-feature">
+                <center>
+                    <h1>Game feature</h1>
+                    <span>
+                        <h3>inal</h3>
+                        <h3>elem</h3>
+                    </span>
+                </center>
+            </section>
+
+            <!-- phần 2 -->
+            <section id="sect-par">
+                <div id="sec2">
+                    <h1>Fire</h1>
+                </div>
+            </section>
+            <section id="sect-par">
+                <div id="sec3">
+                    <h1>Wind</h1>
+                </div>
+            </section>
+            <section id="sect-par">
+                <div id="sec4">
+                    <h1>Water</h1>
+                </div>
+            </section>
+            <section id="sect-par">
+                <div id="sec5">
+                    <h1>Earth</h1>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- phần footer -->
+    <div class="footer">
+        <div class="foot-1">
+            <div class="foot-1-more">
+                <h1 align="center">and more elements you can created</h1>
+            </div>
+        </div>
+        <div class="foot-2">
+            <div class="row">
+
+                <!-- logo footer -->
+                <div class="logo_foot col-lg-6">
+                    <center><img src="../resources/image/logo_foot.png"></center>
+                </div>
+
+                <!-- nội dung và theo dõi -->
+                <div class="follow-us col-lg-6">
+                    <center>
+                        <div class="follow">
+                            <i class="fab fa-facebook"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-reddit"></i>
+                            <i class="fab fa-youtube"></i>
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-discord"></i>
+                            <hr width="60%">
+                        </div>
+                    </center>
+                    <p>
+                        Epic, Epic Games, Epic Games Store and their respective<br>
+                        logos are trademarks or registered trademarks of Epic Games, Inc. In the U.S.<br>
+                        Patent and Trademark Office and elsewhere<br>
+                    </p>
+                    <img src="../resources/image/PEGI.png" id="qegi">
+                    <img src="../resources/image/canada.png" id="canada">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="foot-last">
+        Copyright &#169;2021 TrungNguyen. All Right severved
+    </div>
+
+    
+    <!-- thẻ chức năng -->
+    <div class="follow-us-tab" id="follow-us-tab">
+        <a onclick="followTap()" role="button" class="btn btn-toggle">
+            <i id="toggle-tap" class="fas fa-angle-left"></i>
+        </a>
+        <ul class="list-group">
+            <li class="list-group-item follow-us-title disabled">
+                <h3>Follow me</h3>
+            </li>
+            <li class="list-group-item">
+                <i class="fab fa-facebook"></i>
+                <h4>facebook</h4>
+            </li>
+            <li class="list-group-item">
+                <i class="fab fa-twitter"></i>
+                <h4>twitter</h4>
+            </li>
+            <li class="list-group-item">
+                <i class="fab fa-reddit"></i>
+                <h4>reddit</h4>
+            </li>
+            <li class="list-group-item">
+                <i class="fab fa-youtube"></i>
+                <h4>youtube</h4>
+            </li>
+            <li class="list-group-item">
+                <i class="fab fa-instagram"></i>
+                <h4>instagram</h4>
+            </li>
+            <li class="list-group-item">
+                <i class="fab fa-discord"></i>
+                <h4>discord</h4>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
+
+<!-- kịch bản thẻ tab chức năng -->
+<script src="../resources/js/script.js"></script>

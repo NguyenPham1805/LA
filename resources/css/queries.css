@@ -1,0 +1,125 @@
+/* ------------------------------ responsive khi màn hình dưới 992px ------------------------------*/
+
+@media only screen and (max-width: 992px) {
+
+    .login-in-nav, .login {
+        display: none!important;
+    }
+
+    /* --------------------trong thanh menu tải game và đăng nhập thứ 2------------------------- */
+    .login-out-nav {
+        display: inline;
+        right: 6%;
+        z-index: 200;
+    }
+
+    .login-out-nav .btn:first-child {
+        width: 160px;
+        font-size: .8rem;
+    }
+
+    .login-out-nav .btn:last-child {
+        width: 100px;
+        margin-top: 4px;
+        font-size: .8rem;
+        padding: 1px 0 10px 0;
+    }
+
+    /* --------------------khung đăng kí đăng nhập trong trang đăng nhập------------------------- */
+    .login-box {
+        width: 320px;
+    }
+}
+
+/* ------------------------------ responsive khi màn hình dưới 767px ------------------------------*/
+@media only screen and (max-width: 767px) {
+
+    /* ------------------------------thanh menu bar------------------------------ */
+    .header-inner .navbar {
+        padding-left: 30px;
+    }
+
+    .header-inner .navbar-brand {
+        width: 55px;
+    }
+
+    .nav-item {
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-link {
+        font-size: .7rem;
+    }
+
+    .dropdown-menu {
+        margin-top: 0;
+        background: none;
+    }
+
+    .dropdown-menu a {
+        font-size: .7rem!important;
+    }
+
+    /* ------------------------------trong thanh menu tải game và đăng nhập thứ 2------------------------------ */
+
+    .login-out-nav {
+        right: 9%;
+    }
+
+    /* ----------------------------- banner ------------------------------- */
+    .introduc #h2 {
+        font-size: 1.5rem;
+    }
+
+    #down_on li {
+        width: 11rem;
+        height: 3rem;
+    }
+
+    
+    /* ------------------------ phần đăng kí đang nhập------------------------- */
+    .login-box {
+        width: 300px;
+    }
+
+    /* ------------------------ banner của trang sự kiện ------------------------ */
+    .logo-banner {
+        padding-top: 30%;
+    }
+    
+    .logo-banner img {
+        width: 250px;
+    }
+}
+
+/* ------------------------------ responsive khi màn hình dưới 580px ------------------------------*/
+@media only screen and (max-width: 580px) {
+    /* ------------------------trong thanh menu tải game và đăng nhập thứ 2----------------------- */
+    .login-out-nav {
+        right: 11%;
+    }
+
+    .intro-world #intro {
+        font-size: 4rem;
+    }
+
+    .intro-world #title {
+        font-size: .6rem;
+        max-width: 380px;
+    }
+
+    /* ------------------------------các thẻ sự kiện trong trang sự kiện--------------------------- */
+    .sec2-card {
+        display: block;
+    }
+}
+
+/* ------------------------------ responsive khi màn hình dưới 460px ------------------------------*/
+@media only screen and (max-width: 460px) {
+
+    /* ------------------------trong thanh menu tải game và đăng nhập thứ 2------------------------- */
+    .login-out-nav {
+        right: 13%;
+    }
+}

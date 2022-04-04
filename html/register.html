@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../resources/css/register.css">
+    <link rel="stylesheet" href="../resources/css/queries.css">
+    <link rel="shortcut icon" type="image" href="../resources/image/logo_foot.png">
+    <title>Legends Adventure | Explore the elemental world </title>
+</head>
+
+<body>
+    <!-- ----------------------------- thanh menu----------------------------- -->
+    <div class="header-inner">
+        <div class="login-out-nav">
+            <a href="login.html" class="btn">Log in&ensp;<i class="fas fa-user-circle"></i></a>
+        </div>
+        <nav class="navbar fixed-top navbar-expand-lg">
+            <a class="navbar-brand" href="index.html">
+                <img src="../resources/image/Logo.png" width="70px">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <i class="fas fa-bars navbar-toggler-icon"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="event.html">EVENT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">SKINS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="world.html">WORLD</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                            EXPLORE
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">RANK</a>
+                            <a class="dropdown-item" href="#">OPEN MAP</a>
+                            <a class="dropdown-item" href="#">ABOVE GAME</a>
+                            <a class="dropdown-item" href="#">MOVEI</a>
+                            <a class="dropdown-item" href="#">STORY</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                            MORE
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">COMNUNITY</a>
+                            <a class="dropdown-item" href="#">OUR STUDIOS</a>
+                            <a class="dropdown-item" href="#">FEEDBACK</a>
+                            <a class="dropdown-item" href="#">SUPORT</a>
+                            <a class="dropdown-item" href="#">GIFT CODE</a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                    <ul class="login-in-nav navbar-nav">
+                        <a href="../html/login.html" class="btn">Log in&ensp;<i class="fas fa-user-circle"></i></a>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- -----------------------------phần đăng kí đăng nhập----------------------------- -->
+        <div class="banner">
+            <div class="logo">
+                <img src="../resources/image/logo_foot.png">
+            </div>
+            <form>
+                <div class="input-group mb-4">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fa fa-address-book" aria-hidden="true"></i></span>
+                    </div>
+                    <input onchange="checkRegisterLoginName()" id="login_name" type="text" class="form-control"
+                        placeholder="User name" required>
+                    <div class="check" id="check_login_name"></div>
+                </div>
+            </form>
+            <form>
+                <div class="input-group mb-4">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fa fa-lock" aria-hidden="true"></i></span>
+                    </div>
+                    <input onchange="checkLoginPassword()" id="login_password" type="text" class="form-control"
+                        placeholder="Password" required>
+                    <div class="check" id="check_login_password"></div>
+                </div>
+            </form>
+            <form>
+                <div class="input-group mb-4">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fa fa-lock" aria-hidden="true"></i></span>
+                    </div>
+                    <input onchange="checkRePassword()" id="re_password" type="text" class="form-control"
+                        placeholder="Re password" required>
+                    <div class="check" id="check_re_password"></div>
+                </div>
+            </form>
+            <form>
+                <div class="input-group mb-4">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fa fa-user-circle" aria-hidden="true"></i></span>
+                    </div>
+                    <input onchange="checkLastName()" id="last_name" type="text" class="form-control"
+                        placeholder="Last name" required>
+                    <div class="check" id="check_last_name"></div>
+                </div>
+            </form>
+            <form>
+                <div class="input-group mb-4">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fa fa-user" aria-hidden="true"></i></span>
+                    </div>
+                    <input onchange="checkFirstName()" id="first_name" type="text" class="form-control"
+                        placeholder="First name" required>
+                    <div class="check" id="check_first_name"></div>
+                </div>
+            </form>
+            <form>
+                <div class="input-group mb-4">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                    </div>
+                    <input onchange="checkEmail()" id="email" type="email" class="form-control" placeholder="Email"
+                        required>
+                    <div class="check" id="check_email"></div>
+                </div>
+            </form>
+            <form>
+                <div class="input-group mb-4">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                    </div>
+                    <input onchange="checkPhoneNumber()" id="phone_number" type="text" class="form-control"
+                        placeholder="Phone number" required>
+                    <div class="check" id="check_phone_number"></div>
+                </div>
+            </form>
+            <form class="pl-1">
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" id="ckeck-box"> I agree
+                    </label>
+                </div>
+                <div class="term">
+                    <h3>Terms and Service</h3>
+                    <hr width="90%">
+                    <p>
+                        Lorem ipsum dolor amet, consectetur adipiscing elit. <br>
+                        Relectesque autorLorem ipsum dolor amet, consectetur
+                        adipiscing elit.Relectesque autorLorem ipsum dolor amet,
+                        consectetur adipiscing elit. autorLorem ipsum dolor amet,
+                        consecteturRelectesque autor adipiscing elit.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor amet, consectetur adipiscing elit. <br>
+                        Relectesque autorLorem ipsum dolor amet, consectetur
+                        consectetur adipiscing elit.
+                    </p>
+                </div>
+            </form>
+            <div class="join">
+                <center>
+                    <a id="register" class="btn" href="#" role="button" onclick="register()">Register</a>
+                    <a id="reset" class="btn" href="#" role="button" onclick="reset()">Reset</a>
+                </center>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="../resources/js/register.js"></script>

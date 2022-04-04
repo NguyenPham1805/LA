@@ -1,0 +1,246 @@
+body {
+    margin: 0;
+    padding: 0;
+    transition: all .5S;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* ------------------------------Menu-------------------------------- */
+
+.header-inner .navbar {
+    width: 100vw;
+    padding: 0;
+    background: #1f1f1f66;
+    animation: nav-animate;
+    animation-duration: 4s;
+    z-index: 1;
+}
+
+@keyframes nav-animate {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.header-inner .navbar-brand {
+    padding-left: 50px;
+}
+
+.navbar button {
+    border: none;
+    padding: 10px 10px 0 10px;
+}
+
+.navbar button i{
+    color: #000000dd;
+    font-size: 1.5rem;
+}
+
+.navbar button i:hover{
+    color: #ffffffdd;
+}
+
+.header-inner .nav-item {
+    margin-bottom: 5px;
+}
+
+.header-inner .nav-link{
+    display: inline-block;
+    padding: 5px;
+    height: 30px;
+    margin-left: 20px;
+    color: #000000dd;
+    font-weight: 600;
+    transition: all .5s;
+}
+
+.header-inner .nav-link:hover{
+    border-bottom: 2px solid #ffffffdd;
+    color: #ffffffdd!important;
+    text-shadow:2px 2px 10px #fbff0055, -2px -2px 10px #fbff0055;
+}
+
+.header-inner .navbar-toggler {
+    outline: none!important;
+    border: none!important;
+}
+
+.dropdown-menu {
+    width: 250px;
+    margin-top: 14px;
+    background: linear-gradient(to top, #d28eff85, #ffffff35);
+    border: none;
+    border-radius: 0%;
+}
+
+.dropdown-menu a {
+    color: #000000dd;
+    padding: 10px;
+    padding-left: 30px;
+    font-weight: 600;
+    transition: all .5s;
+}
+
+.dropdown-menu a:hover{
+    color: #ffffffdd;
+    background: none;
+    text-shadow:2px 2px 10px #fbff0055, -2px -2px 10px #fbff0055;
+}
+
+.login-in-nav .btn i {
+    transform: translateY(5px);
+    font-size: 1.8rem;
+}
+
+.login-in-nav .btn{
+    color: #ffffffdd;
+    width: 140px;
+    background: linear-gradient(45deg, #690064, #430077);
+    padding: 16px 25px;
+    transition: .5s;
+    border-radius: 0;
+    padding: 14px 20px;
+    padding-top: 7px;
+}
+
+.login-in-nav .btn {
+    box-shadow: none;
+}
+
+.login-in-nav .btn:hover {
+    color: #ffffffdd;
+    background: linear-gradient(45deg, #81007b, #5b00a0);
+}
+
+/* ---------------------------------------------outer btn------------------------------------------------ */
+
+.login-out-nav {
+    position: fixed;
+    top: 0;
+    right: 7%;
+    z-index: 2;
+    display: none;
+}
+
+.login-out-nav .btn i {
+    transform: translateY(4px);
+    font-size: 1.8rem;
+}
+
+.login-out-nav .btn{
+    color: #ffffffdd;
+    width: 9rem;
+    background: linear-gradient(45deg, #690064, #430077);
+    padding: 8px 20px;
+    transition: .5s;
+    border-radius: 0;
+}
+
+.login-out-nav .btn {
+    box-shadow: none;
+}
+
+.login-out-nav .btn:hover {
+    color: #ffffffdd;
+    background: linear-gradient(45deg, #81007b, #5b00a0);
+}
+
+
+/* ------------------------------phần đăng kí đăng nhập-------------------------------- */
+.banner {
+    background: url(../image/backgroundregister.jpg) center;
+    background-size: cover;
+    width: 100vw;
+}
+
+.logo {
+    padding-top: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    animation: logo-anime;
+    animation-duration: 1s;
+}
+
+@keyframes logo-anime {
+    0% {
+        opacity: 0;
+        transform: translate(0, -100px);
+    }
+
+    85% {
+        opacity: 1;
+        transform: translate(0, 20px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+.logo img {
+    width: 200px;
+}
+
+form {
+    width: 50%;
+    margin: auto;
+}
+
+@media only screen and (max-width: 580px) {
+    form {
+        width: 70%;
+        margin: auto;
+    }
+}
+
+.input-group-text {
+    border-radius: 0!important;
+    background: #1f1f1f;
+    border: #1f1f1f;
+}
+
+.input-group-text i {
+    color: #e2e2e2;
+}
+
+input:focus {
+    box-shadow: none!important;
+    border: 1px solid #424242 !important;
+}
+
+.join .btn {
+    margin-bottom: 20px;
+    margin-left: 40px;
+    padding: 8px 25px;
+    border-radius: 0;
+    background: #573372dd;
+    color: #e2e2e2;
+}
+
+.join .btn:hover {
+    opacity: .8;
+}
+
+.join .btn:focus {
+    box-shadow: none;
+    
+}
+
+.check {
+    display: block;
+}
+
+.valid-feedback,
+.invalid-feedback {
+    position: absolute;
+    top: 90%;
+    left: 20px;
+}

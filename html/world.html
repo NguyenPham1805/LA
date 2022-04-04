@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="shortcut icon" type="image" href="../resources/image/logo_foot.png">
+    <link rel="stylesheet" href="../resources/css/world.css">
+    <link rel="stylesheet" href="../resources/css/queries.css">
+    <title>Legends Adventure | Explore the elemental world </title>
+    <script src="../resources/js/world.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="../resources/js/fullpage.js"></script>
+    <link rel="stylesheet" href="../resources/css/fullpage.css" />
+</head>
+
+<body>
+
+    <!-- ---------------------------thanh menu--------------------------- -->
+    <div class="header-inner">
+        <nav class="navbar fixed-top navbar-expand-lg">
+            <div class="login-out-nav">
+                <a href="#" class="btn"><i class="fas fa-download"></i>&ensp;Download Game</a>
+                <a href="login.html pl-0" class="btn">Log in&ensp;<i class="fas fa-user-circle"></i></a>
+            </div>
+            <a class="navbar-brand" href="index.html">
+                <img src="../resources/image/Logo.png" width="70px">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <i class="fas fa-bars navbar-toggler-icon"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="event.html">EVENT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">SKINS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="world.html">WORLD</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                            EXPLORE
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">RANK</a>
+                            <a class="dropdown-item" href="#">OPEN MAP</a>
+                            <a class="dropdown-item" href="#">ABOVE GAME</a>
+                            <a class="dropdown-item" href="#">MOVEI</a>
+                            <a class="dropdown-item" href="#">STORY</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                            MORE
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">COMNUNITY</a>
+                            <a class="dropdown-item" href="#">OUR STUDIOS</a>
+                            <a class="dropdown-item" href="#">FEEDBACK</a>
+                            <a class="dropdown-item" href="#">SUPORT</a>
+                            <a class="dropdown-item" href="#">GIFT CODE</a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                    <ul class="login navbar-nav">
+                        <a href="#" class="btn"><i class="fas fa-download"></i>&ensp;Download Game</a>
+                        <a href="login.html" class="btn">Log in&ensp;<i class="fas fa-user-circle"></i></a>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- ---------------------------thanh menu theo dõi--------------------------- -->
+    <nav class="navbar2">
+        <ul>
+            <li>
+                <a href="#Lugnica" class="dot active" data-scroll="Lugnica">
+                    <span>Lugnica</span>
+                </a>
+            </li>
+            <li>
+                <a href="#Uber" class="dot" data-scroll="Uber">
+                    <span>Uber</span>
+                </a>
+            </li>
+            <li>
+                <a href="#Ondo" class="dot" data-scroll="Ondo">
+                    <span>Ondo</span>
+                </a>
+            </li>
+            <li>
+                <a href="#Kyzan" class="dot" data-scroll="Kyzan">
+                    <span>Kyzan</span>
+                </a>
+            </li>
+            <li>
+                <a href="#Aunia" class="dot" data-scroll="Aunia">
+                    <span>Aunia</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- ---------------------------phần thân trang web--------------------------- -->
+    <div id="fullpage">
+        <div class="section" id="Lugnica">
+            <div class="intro-world">
+                <h1 id="intro">Lugnica</h1>
+                <p id="title">
+                    A city of freedom that lies in the northeast of Teyvat.<br>
+                    From amongst mountains and wide-open plains,<br> carefree breezes
+                    carry the scent of dandelions — a giftfrom the Anemo God,<br>
+                    Barbatos — across Cider Lake to Mondstadt, which sits on an island in the middle of
+                    the lake.
+                </p>
+                <a id="view-detail" class="btn" href="#" role="button">
+                    <p>view detail</p>
+                </a>
+            </div>
+        </div>
+        <div class="section" id="Uber">
+            <div class="intro-world">
+                <h1 id="intro">Uber</h1>
+                <p id="title">
+                    A city of freedom that lies in the northeast of Teyvat.<br>
+                    From amongst mountains and wide-open plains, carefree breezes carry the scent of dandelions — a
+                    gift<br>
+                    from the Anemo God, Barbatos — across Cider Lake to Mondstadt,<br> which sits on an island in the
+                    middle
+                    of the lake.</p>
+                <a id="view-detail" class="btn" href="#" role="button">
+                    <p>view detail</p>
+                </a>
+            </div>
+        </div>
+        <div class="section" id="Ondo">
+            <div class="intro-world">
+                <h1 id="intro">Ondo</h1>
+                <p id="title">
+                    A city of freedom that lies in the northeast of Teyvat.<br>
+                    From amongst mountains and wide-open plains, carefree breezes carry the scent of dandelions — a
+                    gift<br>
+                    from the Anemo God, Barbatos — across Cider Lake to Mondstadt,<br> which sits on an island in the
+                    middle
+                    of the lake.
+                </p>
+                <a id="view-detail" class="btn" href="#" role="button">
+                    <p>view detail</p>
+                </a>
+            </div>
+        </div>
+        <div class="section" id="Kyzan">
+            <div class="intro-world">
+                <h1 id="intro">Kyzan</h1>
+                <p id="title">
+                    A bountiful harbor that lies in the east of Teyvat.<br>
+                    Mountains stand tall and proud alongside the stone forest,<br> that together with the open plains
+                    and
+                    lively
+                    rivers make up Liyue's bountiful landscape,<br> which shows its unique beauty through each of the
+                    four
+                    seasons.<br> Just how many gifts from the Geo God lie in wait amongst the rocks of Liyue's
+                    mountains?
+                </p>
+                <a id="view-detail" class="btn" href="#" role="button">
+                    <p>view detail</p>
+                </a>
+            </div>
+        </div>
+        <div class="section" id="Aunia">
+            <div class="intro-world">
+                <h1 id="intro">Aunia</h1>
+                <p id="title">
+                    An Isolated Archipelago Far East of Teyvat<br>
+                    Overcome endless thunderstorms and set foot on the islands of
+                    red maple and cherry blossoms.<br> On winding shores and towering cliffs,
+                    and in forests and mountains full of secrets,<br> witness the Eternity
+                    pursued by Her Excellency, theAlmighty Narukami Ogosho.
+                </p>
+                <a id="view-detail" class="btn" href="#" role="button">
+                    <p>view detail</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- <script>
+        $('#fullpage').fullpage({});
+    </script> -->
+
+    <!-- ---------------------------phần fotter--------------------------- -->
+    <div class="footer">
+        <div class="foot-1">
+            <div class="foot-1-more">
+                <h1 align="center">travel with many interesting things</h1>
+            </div>
+        </div>
+        <div class="foot-2">
+            <div class="row">
+                <div class="logo_foot col-lg-6">
+                    <center><img src="../resources/image/logo_foot.png"></center>
+                </div>
+                <div class="follow-us col-lg-6">
+                    <center>
+                        <div class="follow">
+                            <i class="fab fa-facebook"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-reddit"></i>
+                            <i class="fab fa-youtube"></i>
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-discord"></i>
+                            <hr width="60%">
+                        </div>
+                    </center>
+                    <p>
+                        Epic, Epic Games, Epic Games Store and their respective<br>
+                        logos are trademarks or registered trademarks of Epic Games, Inc. In the U.S.<br>
+                        Patent and Trademark Office and elsewhere<br>
+                    </p>
+                    <img src="../resources/image/PEGI.png" id="qegi">
+                    <img src="../resources/image/canada.png" id="canada">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="foot-last">
+        Copyright &#169;2021 TrungNguyen. All Right severved
+    </div>
+</body>
+
+</html>

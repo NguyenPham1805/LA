@@ -1,0 +1,837 @@
+body {
+    margin: 0;
+    padding: 0;
+    transition: all .5S;
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    transition: all .2s linear;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    position: fixed;
+    height: 0;
+    background: transparent;
+}
+
+/* thanh cuộn */
+
+::-webkit-scrollbar-track {
+    background: #9d0bc222;
+}
+::-webkit-scrollbar-corner {
+    display: none;
+}
+::-webkit-scrollbar-thumb {
+    background: #430077;
+}
+
+/* --------------------------------phần banner-------------------------------- */
+
+/* ------------------------------Menu-------------------------------- */
+
+.header-inner .navbar {
+    width: 100vw;
+    padding: 0;
+    background: linear-gradient(to top, #ffffff35, #d28effaa);
+    animation: navanimate;
+    animation-duration: 4s;
+    z-index: 100;
+}
+
+@keyframes navanimate {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.header-inner .navbar-brand {
+    padding-left: 50px;
+}
+
+.navbar button {
+    border: none;
+    padding: 10px 10px 0 10px;
+}
+
+.navbar button i{
+    color: #000000dd;
+    font-size: 1.5rem;
+}
+
+.navbar button i:hover{
+    color: #ffffffdd;
+}
+
+.header-inner .nav-item {
+    margin-bottom: 5px;
+}
+
+.header-inner .nav-link{
+    display: inline-block;
+    padding: 5px;
+    height: 30px;
+    margin-left: 20px;
+    color: #000000dd;
+    font-weight: 600;
+    transition: all .5s;
+}
+
+.header-inner .nav-link:hover{
+    border-bottom: 2px solid #ffffffdd;
+    color: #ffffffdd!important;
+    text-shadow:2px 2px 10px #fbff0055, -2px -2px 10px #fbff0055;
+}
+
+.navbar-nav .nav-item:nth-child(1) a {
+    border-bottom: 2px solid #ffffffdd;
+    color: #ffffffdd!important;
+    text-shadow:2px 2px 10px #fbff0055, -2px -2px 10px #fbff0055;
+
+}
+
+.header-inner .navbar-toggler {
+    outline: none!important;
+    border: none!important;
+}
+
+.dropdown-menu {
+    width: 250px;
+    margin-top: 14px;
+    background: linear-gradient(to top, #d28eff85, #ffffff35);
+    border: none;
+    border-radius: 0%;
+}
+
+.dropdown-menu a {
+    color: #000000dd;
+    padding: 10px;
+    padding-left: 30px;
+    font-weight: 600;
+}
+
+.dropdown-menu a:hover{
+    color: #ffffffdd;
+    background: none;
+    text-shadow:2px 2px 10px #fbff0055, -2px -2px 10px #fbff0055;
+}
+
+/* ------------------------------ tải game và đăng nhập-------------------------------- */
+
+.login-in-nav .btn:first-child {
+    width: 220px;
+    color: #190429;
+    border-radius: 0;
+    font-weight: 700;
+    padding: 10px 20px;
+    transition: all .5s;
+    font-size: 1.1rem;
+}
+
+.login-in-nav .btn:first-child:focus {
+    box-shadow: none;
+}
+
+.login-in-nav .btn:first-child:hover {
+    color: #ffffffdd;
+    font-weight: 600;
+    text-shadow: 2px 2px 10px #39c2e486, -2px -2px 10px #39c2e486;
+}
+
+.login-in-nav .btn:first-child:visited,
+.login-in-nav .btn:first-child:active {
+    font-size: 1rem;
+}
+
+.login-in-nav .btn:last-child i {
+    transform: translateY(5px);
+    font-size: 1.8rem;
+}
+
+.login-in-nav .btn:last-child{
+    color: #ffffffdd;
+    width: 140px;
+    background: linear-gradient(45deg, #690064, #430077);
+    padding: 16px 25px;
+    transition: .5s;
+    border-radius: 0;
+    padding: 14px 20px;
+    padding-top: 7px;
+}
+
+.login-in-nav .btn:last-child {
+    box-shadow: none;
+}
+
+.login-in-nav .btn:last-child:hover {
+    color: #ffffffdd;
+    background: linear-gradient(45deg, #81007b, #5b00a0);
+}
+
+/* ---------------------------------------------tải game và đăng nhập thứ 2------------------------------------------------ */
+
+.login-out-nav {
+    position: fixed;
+    top: 0;
+    right: 7%;
+    z-index: 2;
+    display: none;
+}
+.login-out-nav .btn:first-child {
+    width: 200px;
+    color: #190429;
+    border-radius: 0;
+    font-weight: 700;
+    padding: 7px 15px;
+    transition: all .5s;
+    font-size: 1rem;
+}
+
+.login-out-nav .btn:first-child:focus {
+    box-shadow: none;
+}
+
+.login-out-nav .btn:first-child:hover {
+    color: #ffffffdd;
+    font-weight: 600;
+    text-shadow: 2px 2px 10px #39c2e486, -2px -2px 10px #39c2e486;
+}
+
+.login-out-nav .btn:first-child:visited,
+.login-out-nav .btn:first-child:active {
+    font-size: 1rem;
+}
+
+.login-out-nav .btn:last-child i {
+    transform: translateY(4px);
+    font-size: 1.8rem;
+}
+
+.login-out-nav .btn:last-child{
+    color: #ffffffdd;
+    width: 9rem;
+    background: linear-gradient(45deg, #690064, #430077);
+    padding: 8px 20px;
+    transition: .5s;
+    border-radius: 0;
+}
+
+.login-out-nav .btn:last-child {
+    box-shadow: none;
+}
+
+.login-out-nav .btn:last-child:hover {
+    color: #ffffffdd;
+    background: linear-gradient(45deg, #81007b, #5b00a0);
+}
+
+/* ------------------------------banner-------------------------------- */
+.c-video {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.introduc {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #2e2e2e;
+}
+
+.introduc #h2 {
+    color: #ffffff;
+    text-shadow: 1px 1px 10px #af9500, -1px -1px 10px #af9500;
+    font-size: 2rem;
+    text-align: center;
+    animation: animate-intro;
+    animation-duration: 1.5s;
+    margin-top: 57vh;
+}
+
+@keyframes animate-intro {
+    0% {
+        opacity: 0;
+        transform: translate(0, -100px);
+    }
+
+    80% {
+        transform: translate(0, -20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+.down {
+    top: 65vh;
+    left: 50vw;
+    height: 40px;
+    position: absolute;
+}
+
+.down::after,
+.down::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    height: 20px;
+    width: 20px;
+    border: 2px solid #e6e6e6;
+    transform: translate(-50%, -50%) rotate(45deg);
+    border-top: transparent;
+    border-left: transparent;
+    animation: scroll-down 1s ease-in-out infinite;
+}
+.down::after {
+    animation-delay: .5s;
+}
+
+@keyframes scroll-down {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: .5;
+    }
+
+    50% {
+        opacity: .1;
+    }
+
+    60% {
+        opacity: .5;
+    }
+
+    100% {
+        opacity: 0;
+        top: 100%;
+    }
+}
+
+.down-list {
+    position: absolute;
+    width: 100%;
+}
+
+.down-align {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.down-animate1 {
+    animation: downanime1;
+    animation-duration: 2s;
+}
+
+@keyframes downanime1 {
+    0% {
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+
+    80% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.down-animate2 {
+    animation: downanime2;
+    animation-duration: 2s;
+}
+
+@keyframes downanime2 {
+    0% {
+        opacity: 0;
+        transform: translateX(200px);
+    }
+
+    80% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+#down_on {
+    float:left;
+    padding-left: 25px;
+}
+
+#down_on li {
+    list-style: none;
+    width: 14rem;
+    height: 3.7rem;
+    margin-right: 30px;
+    display: inline-block;
+}
+
+#down_on li a {
+    text-decoration: none;
+}
+
+#down_on li a img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    opacity: .8;
+}
+
+#down_on li a img:hover {
+    opacity: 1;
+}
+
+/* ------------------------------thân trang web-------------------------------- */
+
+/* ------------------------------ phần thân 1 - sự kiện mới -------------------------------- */
+
+.news {
+    width: 100vw;
+    min-height: 100vh;
+    padding: 10vh 5vw;
+    background: url(../image/arthur-yuan-temple2.jpg) center;
+    background-size: cover;
+}
+
+#sec1 h1 {
+    color: #81007b;
+    line-height: 0;
+}
+
+#sec1 h1 i {
+    margin: 0 5px;
+}
+
+#sec1 hr {
+    width: 20%;
+    height: 2px;
+    background-color: white;
+    margin-bottom: 30px;
+}
+
+/* ------------------------------ carousel -------------------------------- */
+
+#sec1 .carousel {
+    width: 100%;
+}
+
+#sec1 .carousel-indicators li {
+    width: 15px;
+    height: 15px;
+    border: #fafafa solid 1px;
+    background: transparent;
+    border-radius: 50%;
+}
+
+#sec1 .carousel-indicators .active {
+    background: #fafafa;
+}
+
+#sec1 .carousel-inner img {
+    width: 100%;
+    border-radius: 3px;
+}
+
+#sec1 .carousel-item {
+    transition: all 1.5s;
+}
+
+#sec1 h3 a {
+    border-bottom: #5b00a0 3px solid;
+    color: #ffffffdd;
+}
+
+/* ------------------------------ cột thông sự kiên -------------------------------- */
+
+#sec1 h3 a:hover {
+    text-decoration: none;
+}
+
+#sec1 .list-group-item {
+    width: 100%;
+    border: none;
+    background: none;
+    border-radius: 0;
+    color: #ffffff;
+    border-bottom: 1px solid #5b00a0;
+}
+
+#sec1 .list-group-item:hover {
+    background: #aa50a62f;
+}
+
+.first_title {
+    margin: 0;
+    padding: 0;
+    width: 400px;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.last_title {
+    position: absolute;
+    top: 0;
+    right: 11px;
+    font-size: 14px;
+    height: 50px;
+    line-height: 50px;
+    color: #ebebeb88;
+}
+
+#sec1 .btn {
+    width: 100px;
+    color: #ffecfe;
+    float: right;
+    margin-top: 20px;
+    transition: all .3s;
+}
+
+#sec1 .btn:hover {
+    color: #8e62af;
+}
+
+/* ------------------------------ phần đặc trưng của game -------------------------------- */
+
+/* ------------------------------ phần một -------------------------------- */
+
+#game-feature {
+    width: 100vw;
+    min-height: 240px;
+    background: url(../image/element.jpg) center;
+    background-size: cover;
+    padding-top: 70px;
+}
+
+#game-feature h1 {
+    color: #9d0bc2;
+    text-transform: uppercase;
+    font-family:  sans-serif;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 10px #0a020f, -1px -1px 10px #0a020f;
+}
+
+#game-feature h3 {
+    display: inline;
+}
+
+#game-feature h3:first-child {
+    color: #7d9ae9;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 10px #0a020f, -1px -1px 10px #0a020f;
+}
+
+#game-feature h3:first-child::before {
+    content: 'orig';
+    color: #11328b;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 10px #0a020f, -1px -1px 10px #0a020f;
+}
+
+#game-feature h3:last-child {
+    color: #b38405;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 10px #0a020f, -1px -1px 10px #0a020f;
+}
+
+#game-feature h3:last-child::after {
+    content: 'ents';
+    color: #972d03;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 10px #0a020f, -1px -1px 10px #0a020f;
+}
+
+/* ------------------------------ phần đặc trưng 2 -------------------------------- */
+
+#sect-par {
+    width: 100vw;
+    height: 578px;
+    overflow: hidden;
+}
+
+#sec2:hover>h1,
+#sec3:hover>h1,
+#sec4:hover>h1,
+#sec5:hover>h1 {
+    display: block;
+    font-size: 4rem;
+}
+
+#sect-par h1 {
+    display: none;
+}
+
+
+#sec2 {
+    color: #960f0f;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-shadow: 1px 1px 10px #ff9925dd, -1px -1px 10px #ff9925dd;
+    background: url(../image/fire_element.jpg) no-repeat center/cover;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    min-height: 578px;
+    transition: .5s;
+}
+
+#sec2:hover {
+    transform: scale(1.2);
+}
+
+#sec3 {
+    color: #7d9ae9;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-shadow: 1px 1px 10px #ffffffdd, -1px -1px 10px #ffffffdd;
+    background: url(../image/wind_element.jpg) no-repeat center/cover;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vw;
+    min-height: 578px;
+    transition: .5s;
+}
+
+#sec3:hover {
+    transform: scale(1.2);
+}
+
+#sec4 {
+    color: #11328b;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-shadow: 1px 1px 10px #ffffffdd, -1px -1px 10px #ffffffdd;
+    background: url(../image/waterfall.jpg) no-repeat center/cover;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    min-height: 578px;
+    transition: .5s;
+}
+
+#sec4:hover {
+    transform: scale(1.2);
+}
+
+#sec5 {
+    color: #5e2500;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-shadow: 1px 1px 10px #ffffffdd, -1px -1px 10px #ffffffdd;
+    background: url(../image/earth_element.jpg) no-repeat center/cover;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    min-height: 578px;
+    transition: .5s;
+}
+
+#sec5:hover {
+    transform: scale(1.2);
+}
+
+/*--------------------------------footer------------------------------------*/
+.footer {
+    width: 100vw;
+    background: url(../image/footer.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.foot-1-more {
+    padding-top: 25px;
+}
+
+.foot-1-more h1 {
+    text-transform: uppercase;
+    font-family: fantasy;
+    word-spacing: 3px;
+    border-bottom: 1px solid;
+    letter-spacing: 3px;
+    background: linear-gradient(45deg, #ff0800, #ffff00, #e100ff,
+    #ae00ff, #0044ff, #00ffdd, #00ff00, #ffff00, #ff0000);
+    background-size: 400%;
+    text-shadow: 2px 2px 10px #ffffff1e;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: animate 60s linear infinite;
+    padding-bottom: 25px;
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0%;
+    }
+
+    100% {
+        background-position: 400%;
+    }
+}
+
+.foot-1 hr {
+    color: #fafafa;
+}
+
+.logo_foot img {
+    width: 20rem;
+    margin-top: 5%;
+}
+
+.follow-us #qegi {
+    width: 80px;
+    margin-left: 20px;
+}
+
+.follow-us #canada {
+    width: 170px;
+    margin-left: 30px;
+    margin-top: -5px;
+}
+
+.follow-us p {
+    margin-left: 20px;
+    color: #999c9c;
+}
+
+.follow-us .follow {
+    color: #9c9c9c;
+    font-size: 2rem;
+}
+
+.follow-us .follow i {
+    margin-left: 15px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.follow-us .follow i:hover {
+    font-size: 2.5rem;
+    color: #ffffff;
+    text-shadow: 2px 2px 10px #39c2e486, -2px -2px 10px #39c2e486;
+}
+
+.follow-us .follow hr {
+    background-color: #525252;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.foot-last {
+    width: 100vw;
+    padding: 20px 0;
+    background-color: #000000;
+    color: #a7a7a7dd;
+    border-top: 1px solid #1d1d1ddd;
+    text-align: center;
+}
+
+/*-------------------------------- thẻ tab chức năng ------------------------------------*/
+
+.follow-us-tab {
+    position: fixed;
+    top: 30%;
+    z-index: 5;
+    opacity: 0;
+    transition: all .5s;
+    animation-duration: .5s;
+}
+
+.btn-toggle {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 30px;
+    right: -35px;
+    padding: 20px 10px;
+    background: #303030;
+}
+
+.btn-toggle i {
+    color: #9d0bc2;
+    transition: .5s;
+}
+
+.follow-us-tab .list-group {
+    border-radius: 0;
+}
+
+.follow-us-tab .list-group .disabled {
+    color: #0a020f;
+    cursor: default;
+}
+
+.follow-us-tab .list-group-item {
+    width: 200px;
+    border-radius: 0!important;
+    cursor: pointer;
+    opacity: .9;
+    padding-left: 30px;
+    border-bottom: #966e94d8 1px solid;
+}
+
+.follow-us-tab .list-group-item:last-child {
+    border: none;
+}
+
+.follow-us-tab .list-group-item:hover {
+    background: #5b00a0;
+    color: #e6e6e6;
+    opacity: 1;
+}
+
+.follow-us-tab i {
+    font-size: 1.8rem;
+}
+
+.follow-us-tab h4 {
+    display: inline;
+    margin-left: 15px;
+    font-size: 1.2rem;
+}
